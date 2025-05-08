@@ -4,6 +4,9 @@ from pages.cart_page import CartPage
 from utils.TestData import TestData
 
 
+
+
+@pytest.mark.smoke
 def test_add_and_remove_from_cart(driver):
     home = HomePage(driver)
     cart = CartPage(driver)

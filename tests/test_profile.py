@@ -2,6 +2,9 @@ from pages.login_page import LoginPage
 from pages.profile_page import ProfilePage
 from utils.TestData import TestData
 
+
+@pytest.mark.regression
+@pytest.mark.sanity
 def test_add_address(driver):
     driver.get("https://practice.automationtesting.in/my-account/")
     login = LoginPage(driver)

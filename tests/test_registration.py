@@ -2,6 +2,10 @@ from pages.login_page import LoginPage
 import uuid
 from utils.TestData import TestData
 
+
+
+@pytest.mark.regression
+@pytest.mark.sanity
 def test_user_registration(driver):
     driver.get("https://practice.automationtesting.in/my-account/")
     login = LoginPage(driver)
