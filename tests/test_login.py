@@ -1,5 +1,6 @@
 from pages.login_page import LoginPage
 from utils.TestData import TestData
+import pytest
 
 
 @pytest.mark.smoke
