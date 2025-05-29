@@ -9,3 +9,16 @@ def test_login_valid_user(driver):
     login = LoginPage(driver)
     login.login(TestData.username, TestData.password)
     assert "My Account" in driver.page_source
+
+
+
+
+
+
+@pytest.mark.nagur
+@pytest.mark.sanity
+def test_login_valid_user(driver):
+    driver.get(TestData.url)
+    login = LoginPage(driver)
+    login.login(TestData.username, TestData.password)
+    assert "My Account" in driver.page_source
